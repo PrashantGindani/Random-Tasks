@@ -1,0 +1,102 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(179, 179, 179, 0.192);
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.head-text {
+  align-items: center;
+  color: #282c34;
+  font-size: 3rem;
+  margin-bottom: 100px;
+}
+
+.user-input {
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: auto;
+}
+.userbtn {
+  padding: 10px 20px;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: auto;
+  border: none;
+  transition: opacity 500ms;
+}
+
+.userbtn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+section {
+  margin: 50px 0px;
+}
+.correct {
+  background-color: yellowgreen;
+}
+.hot {
+  background-color: red;
+}
+.warm {
+  background-color: rgb(250, 185, 7);
+}
+.cold {
+  background-color: rgb(6, 166, 240);
+}
+.out {
+  font-size: 20px;
+  padding: 5vmax;
+  display: inline-block;
+  border-radius: 50%;
+  animation: output-ani ease-in-out 1000ms infinite alternate;
+}
+
+.playbtn {
+  color: #61dafb;
+  width: 20vh;
+  height: 20vh;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 2px solid #61dafb;
+  animation: ani 1000ms ease-in-out infinite alternate;
+}
+@keyframes output-ani {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+@keyframes ani {
+  from {
+    box-shadow: 0 0 15px #61dafb;
+    opacity: 1;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
